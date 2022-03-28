@@ -1,0 +1,17 @@
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 1rem 0;
+}
+.search-container .fa-magnifying-glass {
+  color: #000;
+  font-size: 1.35rem;
+  cursor: pointer;
+}
+.search-container .search-input {
+  margin-left: 1rem;
+  padding: 1rem 0.5rem;
+  height: 100%;
+}/*# sourceMappingURL=search.css.map */

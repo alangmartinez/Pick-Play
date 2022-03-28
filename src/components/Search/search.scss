@@ -1,0 +1,18 @@
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem 0;
+
+    .fa-magnifying-glass{
+        color: #000;
+        font-size: 1.35rem;
+        cursor: pointer;
+    }
+    .search-input{
+        margin-left: 1rem;
+        padding: 1rem .5rem;
+        height: 100%;
+    }
+}

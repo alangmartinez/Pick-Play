@@ -1,5 +1,6 @@
 import './navBar.css';
 import Search from '.././Search/Search';
+import CartWidget from './../CartWidget/CartWidget';
 
 const NavBar = ()=>{
 
@@ -9,7 +10,8 @@ const NavBar = ()=>{
         <>
             <nav className="nav-bar d-flex justify-content-center align-items-center">
                 <Search/>
-                <ul className="menu-list d-flex justify-content-end align-items-center gap-5 ms-auto">
+                <CartWidget quantity={[]}/>
+                <ul className="menu-list d-flex justify-content-end align-items-center gap-5">
                     {
                         menu.map((item, index)=>{
                             return <a 

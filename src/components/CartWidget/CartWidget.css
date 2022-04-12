@@ -1,0 +1,13 @@
+.cart-widget {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #000;
+  font-size: 1.05rem;
+  padding: 0 0.5rem;
+}
+.cart-widget .fa-cart-shopping {
+  line-height: unset;
+}
+.cart-widget .quantity {
+  margin-left: 0.25rem;
+}/*# sourceMappingURL=CartWidget.css.map */

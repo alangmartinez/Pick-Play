@@ -1,14 +1,14 @@
+import './SelectGame.css'
 
-const SelectGame = (props)=> {
+
+const SelectGame = ({src, title})=> {
 
     return(
         <>
-            <div className="container">
-                <picture>
-                    <img src="../../assets/img/play-station.jpg" alt="computer games" />
-                    <h5>{props.title}</h5>
-                </picture>
-            </div>
+            <picture className='game'>
+                <img src={src} alt="computer games" className='game-img shadow-lg'/>
+                <h5 className='title'>{title}</h5>
+            </picture>
         </>
     )
 }

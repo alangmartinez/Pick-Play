@@ -1,0 +1,27 @@
+.game {
+  position: relative;
+}
+.game .game-img {
+  width: 600px;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.game .game-img:hover {
+  filter: grayscale(100%);
+}
+.game .title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}/*# sourceMappingURL=SelectGame.css.map */

@@ -2,25 +2,25 @@ import { useState } from 'react';
 import './form.css'
 
 const Form = ()=> {
-
-    const [data, setData] = useState({
+    
+    const [userData, setUserData] = useState({
         name: '',
         surname: ''
     })
 
     const handleInputChange = (e)=>{
-        setData({
-            ...data,
+        setUserData({
+            ...userData,
             [e.target.name] : e.target.value
         })
-        console.log(data);
+        console.log(userData);
     }
 
     const dataSumbit = (e)=> {
         e.preventDefault();
         e.target.reset();
 
-        JSON.stringify(localStorage.setItem("userData", data));
+        JSON.stringify(localStorage.setItem("userData", userData));
     }
 
 
@@ -30,7 +30,7 @@ const Form = ()=> {
                 className="d-flex form-control gap-4 align-items-center p-4 container mb-3 form-container"
                 onSubmit={dataSumbit}
             >
-                <h3 className="col-md-2 title"><i className="fas fa-sign-in-alt me-3"></i>Login :</h3>
+                <h3 className="col-md-2"><i className="fas fa-sign-in-alt me-3"></i>Login :</h3>
                 <div className="form-floating col-md-3 form-input">
                     <input 
                         type="text" 

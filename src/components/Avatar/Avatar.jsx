@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './avatar.css';
 
 const Avatar = (props) => {
@@ -11,7 +11,6 @@ const Avatar = (props) => {
         const avatarSelected = e.target.value;
         setAvatar(`https://randomuser.me/api/portraits/lego/${avatarSelected}.jpg`)
     }
-
 
     return(
         <>
